@@ -9,6 +9,8 @@ public class PublishWebService {
 		StockWS serviceStockWS = new StockWS();
 		String url = "http://localhost:8080/stockws";
 		
+		System.out.println("Service is up and running: " + url.concat("?wsdl"));
+		
 		Endpoint.publish(url, serviceStockWS);
 	}
 }
