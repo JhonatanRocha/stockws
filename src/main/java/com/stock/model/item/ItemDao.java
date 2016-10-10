@@ -15,7 +15,7 @@ public class ItemDao {
 		populateItensOnMap();
 	}
 	
-	public void cadastrar(Item item) {
+	public void register(Item item) {
 		ITENS.put(item.getSku(), item);
 	}
 
