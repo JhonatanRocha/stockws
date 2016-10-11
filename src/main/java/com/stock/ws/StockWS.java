@@ -50,6 +50,7 @@ public class StockWS {
 		boolean isValid = new TokenDao().isValid(token);
 
 		if (!isValid)
+			//cheked exception
 			throw new AuthorizationException("Authorization failed.");
 		
 		new ItemValidator(item).validate();
